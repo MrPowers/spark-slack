@@ -10,7 +10,10 @@ sparkVersion := "2.3.0"
 
 sparkComponents ++= Seq("sql")
 
-libraryDependencies += "net.gpedro.integrations.slack" % "slack-webhook" % "1.2.1"
+libraryDependencies ++= Seq(
+  "net.gpedro.integrations.slack" % "slack-webhook" % "1.2.1",
+  "io.spray" % "spray-json_2.11" % "1.3.2"
+)
 libraryDependencies += "com.github.mrpowers" % "spark-daria" % "v2.3.0_0.18.0"
 
 libraryDependencies += "com.github.mrpowers" % "spark-fast-tests" % "v2.3.0_0.7.0" % "test"
@@ -27,3 +30,4 @@ assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeSca
 // Add the JAR file naming conventions described here: https://github.com/MrPowers/spark-style-guide#jar-files
 // You can add the JAR file naming conventions by running the shell script
 assemblyJarName in assembly := s"${name.value}_${scalaBinaryVersion.value}-${sparkVersion.value}_${version.value}.jar"
+
