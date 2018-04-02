@@ -12,7 +12,7 @@ sparkComponents ++= Seq("sql")
 
 libraryDependencies ++= Seq(
   "net.gpedro.integrations.slack" % "slack-webhook" % "1.2.1",
-  "io.spray" % "spray-json_2.11" % "1.3.2"
+  "org.json4s" %% "json4s-native" % "3.3.0"
 )
 libraryDependencies += "com.github.mrpowers" % "spark-daria" % "v2.3.0_0.18.0"
 
