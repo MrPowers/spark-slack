@@ -7,8 +7,8 @@ class SlashParser(responseJson: String) {
 
   implicit val formats = org.json4s.DefaultFormats
 
-  def buildSlashResponse(): SlashResponse = {
-    parse(responseJson).extract[SlashResponse]
-  }
+  val slashResponse: SlashResponse = parse(responseJson).extract[SlashResponse]
+
+  val textComponents = slashResponse.text.split(" ")
 
 }
