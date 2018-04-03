@@ -15,6 +15,8 @@ The [GitHub releases](https://github.com/MrPowers/spark-slack/releases/) have JA
 
 ## Documentation
 
+[Here is a link to the latest documentation](https://mrpowers.github.io).
+
 ### Slack notifications
 
 Send messages to a Slack channel as follows:
