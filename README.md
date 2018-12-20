@@ -1,6 +1,6 @@
 # spark-slack
 
-Speak Slack notifications and handle Slack Slack command responses.
+Speak Slack notifications and handle Slack Slash command responses.
 
 ## Accessing the library
 
@@ -30,9 +30,9 @@ notifier.speak("You are amazing", "general", ":wink:", "Frank")
 
 ### Handle Slack Slash Commands
 
-[Read here](https://api.slack.com/slash-commands) to learn about Slack Slash commands.
+[Read here](https://api.slack.com/slash-commands) to learn about Slash commands.
 
-Slack Slash commands send JSON responses in this format:
+Slash commands send JSON responses in this format:
 
 ```
 token=gIkuvaNzQIHg97ATvDxqgjtO
